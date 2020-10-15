@@ -11,10 +11,21 @@ if filereadable("/Users/canand/.nvm/versions/node/v13.14.0/bin/neovim-node-host"
   let g:node_host_prog='/Users/canand/.nvm/versions/node/v13.14.0/bin/neovim-node-host'
 endif
 
+" lightline configuration
+let g:lightline = {
+  \ 'colorscheme': 'one',
+  \ 'active': {
+  \   'right': [ [ 'lineinfo' ],
+  \              [ 'percent' ],
+  \              [ 'filetype' ] ]
+  \ },
+  \ }
+
 if &loadplugins
   packadd! fzf
   packadd! fzf.vim
   packadd! base16-vim
+  packadd! lightline
 endif
 
 " Automatic, language-dependent indentation, syntax coloring and other
