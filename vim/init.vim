@@ -22,15 +22,19 @@ let g:lightline = {
   \ }
 
 if &loadplugins
+  packadd! base16-vim
+  packadd! ferret
   packadd! fzf
   packadd! fzf.vim
-  packadd! base16-vim
   packadd! lightline
-  packadd! vim-dirvish
-  packadd! vim-surround
-  packadd! vim-fugitive
+  packadd! loupe
+  packadd! scalpel
+  packadd! vcs-jump
   packadd! vim-commentary
+  packadd! vim-dirvish
+  packadd! vim-fugitive
   packadd! vim-repeat
+  packadd! vim-surround
 endif
 
 " Automatic, language-dependent indentation, syntax coloring and other

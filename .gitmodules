@@ -25,3 +25,15 @@
 [submodule "vim-repeat"]
 	path = vim/pack/bundle/opt/vim-repeat
 	url = git@github.com:tpope/vim-repeat.git
+[submodule "loupe"]
+	path = vim/pack/bundle/opt/loupe
+	url = git@github.com:wincent/loupe.git
+[submodule "scalpel"]
+	path = vim/pack/bundle/opt/scalpel
+	url = git@github.com:wincent/scalpel.git
+[submodule "ferret"]
+	path = vim/pack/bundle/opt/ferret
+	url = git@github.com:wincent/ferret.git
+[submodule "vcs-jump"]
+	path = vim/pack/bundle/opt/vcs-jump
+	url = git@github.com:wincent/vcs-jump.git

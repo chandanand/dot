@@ -47,12 +47,6 @@ nnoremap s  "_d
 nnoremap S  "_D
 nnoremap ss "_dd
 
-" Search results centered please
-nnoremap <silent> n nzz
-nnoremap <silent> N Nzz
-nnoremap <silent> * *zz
-nnoremap <silent> # #zz
-
 " use tab and shift tab to indent and de-indent code
 nnoremap <Tab>   >>
 nnoremap <S-Tab> <<
