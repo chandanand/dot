@@ -19,9 +19,19 @@ let g:lightline = {
   \              [ 'percent' ],
   \              [ 'filetype' ] ]
   \ },
+  \ 'component_function': {
+  \   'filename': 'LightlineFilename',
+  \ }
   \ }
 
-let g:deoplete#enable_at_startup = 1
+function! LightlineFilename()
+  let root = fnamemodify(get(b:, 'git_dir'), ':h')
+  let path = expand('%:p')
+  if path[:len(root)-1] ==# root
+    return path[len(root)+1:]
+  endif
+  return expand('%')
+endfunction
 
 if &loadplugins
   packadd! base16-vim
@@ -30,16 +40,15 @@ if &loadplugins
   packadd! fzf.vim
   packadd! lightline
   packadd! loupe
+  packadd! coc
   packadd! scalpel
   packadd! vcs-jump
   packadd! vim-commentary
   packadd! vim-dirvish
   packadd! vim-fugitive
+  packadd! vim-go
   packadd! vim-repeat
   packadd! vim-surround
-  packadd! nvim-lspconfig
-  packadd! deoplete
-  packadd! deoplete-lsp
 endif
 
 " Automatic, language-dependent indentation, syntax coloring and other

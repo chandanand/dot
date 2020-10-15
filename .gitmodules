@@ -46,3 +46,9 @@
 [submodule "deoplete-lsp"]
 	path = vim/pack/bundle/opt/deoplete-lsp
 	url = git@github.com:Shougo/deoplete-lsp.git
+[submodule "vim-go"]
+	path = vim/pack/bundle/opt/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule "coc"]
+	path = vim/pack/bundle/opt/coc
+	url = git@github.com:neoclide/coc.nvim.git
