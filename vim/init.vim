@@ -14,6 +14,7 @@ endif
 if &loadplugins
   packadd! fzf
   packadd! fzf.vim
+  packadd! base16-vim
 endif
 
 " Automatic, language-dependent indentation, syntax coloring and other
