@@ -21,6 +21,8 @@ let g:lightline = {
   \ },
   \ }
 
+let g:deoplete#enable_at_startup = 1
+
 if &loadplugins
   packadd! base16-vim
   packadd! ferret
@@ -35,6 +37,9 @@ if &loadplugins
   packadd! vim-fugitive
   packadd! vim-repeat
   packadd! vim-surround
+  packadd! nvim-lspconfig
+  packadd! deoplete
+  packadd! deoplete-lsp
 endif
 
 " Automatic, language-dependent indentation, syntax coloring and other
