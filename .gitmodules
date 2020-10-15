@@ -13,3 +13,15 @@
 [submodule "vim-dirvish"]
 	path = vim/pack/bundle/opt/vim-dirvish
 	url = git@github.com:justinmk/vim-dirvish.git
+[submodule "vim-surround"]
+	path = vim/pack/bundle/opt/vim-surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "vim-fugitive"]
+	path = vim/pack/bundle/opt/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "vim-commentary"]
+	path = vim/pack/bundle/opt/vim-commentary
+	url = git@github.com:tpope/vim-commentary.git
+[submodule "vim-repeat"]
+	path = vim/pack/bundle/opt/vim-repeat
+	url = git@github.com:tpope/vim-repeat.git

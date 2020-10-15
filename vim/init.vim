@@ -27,6 +27,10 @@ if &loadplugins
   packadd! base16-vim
   packadd! lightline
   packadd! vim-dirvish
+  packadd! vim-surround
+  packadd! vim-fugitive
+  packadd! vim-commentary
+  packadd! vim-repeat
 endif
 
 " Automatic, language-dependent indentation, syntax coloring and other
