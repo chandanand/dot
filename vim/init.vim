@@ -26,6 +26,7 @@ if &loadplugins
   packadd! fzf.vim
   packadd! base16-vim
   packadd! lightline
+  packadd! vim-dirvish
 endif
 
 " Automatic, language-dependent indentation, syntax coloring and other

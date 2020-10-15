@@ -10,3 +10,6 @@
 [submodule "lightline"]
 	path = vim/pack/bundle/opt/lightline
 	url = git@github.com:itchyny/lightline.vim.git
+[submodule "vim-dirvish"]
+	path = vim/pack/bundle/opt/vim-dirvish
+	url = git@github.com:justinmk/vim-dirvish.git
