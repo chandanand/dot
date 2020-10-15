@@ -1,0 +1,6 @@
+[submodule "fzf"]
+	path = vim/pack/bundle/opt/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "fzf.vim"]
+	path = vim/pack/bundle/opt/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
