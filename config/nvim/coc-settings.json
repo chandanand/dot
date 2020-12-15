@@ -1,0 +1,13 @@
+{
+  "suggest.noselect": false,
+  "suggest.echodocSupport": true,
+  "suggest.enablePreview": true,
+  "snippets.ultisnips.enable": true,
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "gosnippets/UltiSnips"
+  ],
+  "coc.preferences.formatOnInsertLeave": false,
+  "coc.preferences.maxFileSize": "1MB",
+  "coc.preferences.formatOnSaveFiletypes": ["go"]
+}

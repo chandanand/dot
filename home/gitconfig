@@ -1,0 +1,60 @@
+[user]
+  name = Chand Anand
+  email = canand@uber.com
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = true
+[url "ssh://gitolite@code.uber.internal/"]
+	insteadOf = git://code.uber.internal/
+[credential "https://git.uberinternal.com"]
+	helper = usso
+[url "ssh://code.uber.internal/"]
+	insteadOf = https://code.uber.internal/
+[url "ssh://config.uber.internal/"]
+	insteadOf = https://config.uber.internal/
+[credential "https://vfs4g-cache.uberinternal.com"]
+	helper = usso
+[http "https://gopkg.uberinternal.com"]
+	followRedirects = true
+[http "https://gopkg.in"]
+	followRedirects = true
+[url "ssh://git@github.com/uber/"]
+	insteadOf = https://github.com/uber/
+[push]
+  default = current
+[color]
+  ui = auto
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
+[diff]
+  tool = vimdiff
+[difftool "opendiff"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[core]
+  pager = diff-so-fancy | less --tabs=2 -RFX
+  autocrlf = input
+[alias]
+  a = add
+  ap = add -p
+  br = branch
+  cl = clone
+  co = checkout
+  c = commit
+  d = diff
+  dt = difftool
+  dc = diff --cached
+  lgraph = log --graph --pretty=format:\"%Cblue%h %d%Creset - %s - %Cred%an%Creset - %Cgreen%ar\"
+  lgraphlong = log --graph --pretty=format:\"%Cblue%h %d%Creset - %s - %Cred%an (%ae)%Creset - %Cgreen%cD\"
+  l = log
+  pl = pull
+  ps = push
+  rs = reset
+  rsh = reset HEAD
+  s = status
+  sts = stash
+[include]
+  path = ~/.gitconfig.local

@@ -1,0 +1,4 @@
+.DS_Store
+.ctags
+config/nvim/plugged/*
+config/karabiner/automatic_backups/*
