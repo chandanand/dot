@@ -33,7 +33,7 @@ call plug#begin('~/.config/nvim/plugged')
   " IDE like
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'ludovicchabant/vim-gutentags'
-  " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
   " Improvements
   Plug 'tpope/vim-fugitive'

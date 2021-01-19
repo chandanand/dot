@@ -7,7 +7,10 @@ let g:go_fmt_experimental = 1
 let g:go_term_mode = "split"
 let g:go_term_enabled = 1
 let g:go_alternate_mode = "vsplit"
-let g:go_diagnostics_enabled = 1
+let g:go_diagnostics_level = 0
+let g:go_fmt_autosave = 0
+let g:go_imports_autosave = 1
+let g:go_mod_fmt_autosave = 0
 let g:go_fold_enable = ['block', 'import', 'varconst', 'package_comment']
 
 let g:go_highlight_build_constraints = 1
