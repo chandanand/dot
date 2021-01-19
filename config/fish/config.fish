@@ -1,9 +1,9 @@
-# Init Starship
-starship init fish | source
-
 # load user confs
 source $HOME/.config/fish/env.fish
 source $HOME/.config/fish/uber.fish
+
+# Init Starship
+starship init fish | source
 
 # Hook direnv
 direnv hook fish | source

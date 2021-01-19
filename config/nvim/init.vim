@@ -31,7 +31,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'justinmk/vim-dirvish'
 
   " IDE like
-  Plug 'neoclide/coc.nvim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'ludovicchabant/vim-gutentags'
   " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
