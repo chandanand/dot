@@ -32,6 +32,7 @@ call plug#begin('~/.config/nvim/plugged')
 
   " IDE like
   Plug 'neoclide/coc.nvim'
+  Plug 'ludovicchabant/vim-gutentags'
   " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
   " Improvements
@@ -62,6 +63,7 @@ let g:lightline = {
   \ 'component_function': {
   \   'filename': 'LightlineFilename',
   \   'cocstatus': 'coc#status',
+  \   'tags': 'gutentags#statusline',
   \   'currentfunction': 'CocCurrentFunction'
   \ },
   \ }

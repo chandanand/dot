@@ -27,4 +27,5 @@ set -gx LESS_TERMCAP_so (set_color -b blue -o yellow)
 set -gx LESS_TERMCAP_ue (set_color normal)
 set -gx LESS_TERMCAP_us (set_color -o green)
 
+set -gx FZF_DEFAULT_COMMAND 'rg --files --ignore'
 set -gx FZF_DEFAULT_OPTS '--cycle --layout=reverse --border --height 50% --preview-window=wrap'
