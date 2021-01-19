@@ -7,8 +7,11 @@ if filereadable('/Users/canand/dot/nvim_py/bin/python')
   " Avoid search, speeding up start-up.
   let g:python3_host_prog='/Users/canand/dot/nvim_py/bin/python'
 endif
-if filereadable("/Users/canand/.nvm/versions/node/v13.14.0/bin/neovim-node-host")
-  let g:node_host_prog='/Users/canand/.nvm/versions/node/v13.14.0/bin/neovim-node-host'
+if filereadable("/usr/local/bin/neovim-node-host")
+  let g:node_host_prog='/usr/local/bin/neovim-node-host'
+endif
+if filereadable("/Users/canand/.rbenv/shims/neovim-ruby-host")
+  let g:node_host_prog='/Users/canand/.rbenv/shims/neovim-ruby-host'
 endif
 
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
@@ -48,7 +51,7 @@ syntax on
 
 " lightline configuration
 let g:lightline = {
-  \ 'colorscheme': 'Tomorrow',
+  \ 'colorscheme': 'Tomorrow_Night',
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
   \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ],

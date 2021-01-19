@@ -10,7 +10,7 @@ if exists('$SUDO_USER')
   set nobackup                        " don't create root-owned files
   set nowritebackup
 else
-  set backupdir=$HOME/.vim/tmp/backup " keep backup files out of the way
+  set backupdir=$HOME/.config/nvim/tmp/backup " keep backup files out of the way
 endif
 
 if exists('&belloff')
@@ -23,7 +23,7 @@ set diffopt+=foldcolumn:0             " don't show fold column in diff view
 if exists('$SUDO_USER')
   set noswapfile                      " don't create root-owned files
 else
-  set directory=$HOME/.vim/tmp/swap/  " keep swap files out of the way
+  set directory=$HOME/.config/nvim/tmp/swap/  " keep swap files out of the way
 endif
 
 set noemoji                           " don't assume all emoji are double width
@@ -151,7 +151,7 @@ if has('persistent_undo')
   if exists('$SUDO_USER')
     set noundofile                    " don't create root-owned files
   else
-    set undodir=~/.vim/tmp/undo       " keep undo files out of the way
+    set undodir=~/.config/nvim/tmp/undo       " keep undo files out of the way
     set undofile                      " actually use undo files
   endif
 endif
@@ -184,13 +184,13 @@ if exists('s:viminfo')
     " - '0 store marks for 0 files
     " - <0 don't save registers
     " - f0 don't store file marks
-    " - n: store in ~/.vim/tmp
+    " - n: store in ~/.config/nvim/tmp
     "
-    execute 'set ' . s:viminfo . "=!,'100,<0,s10,n~/.vim/tmp/" . s:viminfo
+    execute 'set ' . s:viminfo . "=!,'100,<0,s10,n~/.config/nvim/tmp/" . s:viminfo
 
-    if !empty(glob('~/.vim/tmp/' . s:viminfo))
-      if !filereadable(expand('~/.vim/tmp/' . s:viminfo))
-        echoerr 'warning: ~/.vim/tmp/' . s:viminfo . ' exists but is not readable'
+    if !empty(glob('~/.config/nvim/tmp/' . s:viminfo))
+      if !filereadable(expand('~/.config/nvim/tmp/' . s:viminfo))
+        echoerr 'warning: ~/.config/nvim/tmp/' . s:viminfo . ' exists but is not readable'
       endif
     endif
   endif

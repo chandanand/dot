@@ -11,7 +11,7 @@ abbr proj 'cd ~/gocode/src/'
 abbr code 'cd ~/code'
 
 # quick edits to dot files
-abbr aliases 'nvim ~/.config/fish/alias.fish'
+abbr aliases 'nvim ~/.config/fish/conf.d/alias.fish'
 abbr funcs 'nvim ~/.config/fish/functions/'
 abbr fishconfig 'nvim ~/.config/fish/config.fish'
 abbr vimconfig 'nvim ~/.config/nvim/'
@@ -91,5 +91,7 @@ abbr au 'arcupdate'
 # brew
 abbr bi 'brew install'
 abbr get 'brew install'
+abbr bu 'brew uninstall'
+abbr remove 'brew uninstall'
 abbr bud 'brew update'
 abbr bug 'brew upgrade'

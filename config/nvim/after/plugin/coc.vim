@@ -1,3 +1,5 @@
+let g:coc_global_extensions = ['coc-json', 'coc-go']
+
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'

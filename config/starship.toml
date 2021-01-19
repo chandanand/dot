@@ -1,5 +1,10 @@
+scan_timeout = 10
+
 [git_branch]
 symbol = " "
+
+[git_status]
+disabled = true
 
 [golang]
 symbol = " "
