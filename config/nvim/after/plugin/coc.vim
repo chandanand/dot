@@ -1,4 +1,4 @@
-let g:coc_global_extensions = ['coc-json', 'coc-go']
+let g:coc_global_extensions = ['coc-json', 'coc-go', 'coc-snippets', 'coc-marketplace', 'coc-flow']
 
 function! s:check_back_space() abort
   let col = col('.') - 1
