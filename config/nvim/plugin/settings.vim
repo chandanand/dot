@@ -197,7 +197,7 @@ if exists('s:viminfo')
 endif
 
 if has('mksession')
-  set viewdir=~/.vim/tmp/view         " override ~/.vim/view default
+  set viewdir=$HOME/.config/nvim/tmp/sessions         " override ~/.vim/view default
   set viewoptions=cursor,folds        " save/restore just these (with `:{mk,load}view`)
 endif
 

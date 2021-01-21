@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
   " theme
   Plug 'chriskempson/base16-vim'
   Plug 'itchyny/lightline.vim'
+  Plug 'mhinz/vim-startify'
 
   " Navigation
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
