@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/plugged')
   " IDE like
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'ludovicchabant/vim-gutentags'
+  Plug 'rhysd/vim-clang-format'
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
   " Improvements
@@ -42,6 +43,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-abolish'
+  Plug 'junegunn/vim-easy-align'
   Plug 'wincent/ferret'
   Plug 'wincent/loupe'
 call plug#end()
@@ -82,3 +85,5 @@ function! CocCurrentFunction()
     return get(b:, 'coc_current_function', '')
 endfunction
 
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)

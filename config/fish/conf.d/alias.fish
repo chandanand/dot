@@ -8,7 +8,6 @@ abbr down 'cd ~/Downloads'
 abbr dots 'cd ~/dot'
 abbr mono 'cd ~/go-code'
 abbr proj 'cd ~/gocode/src/'
-abbr code 'cd ~/code'
 
 # quick edits to dot files
 abbr aliases 'nvim ~/.config/fish/conf.d/alias.fish'
@@ -27,7 +26,8 @@ abbr .... 'cd ../../..'
 abbr cdd 'cd -'
 
 alias ls lsd
-alias ranger 'TERM=xterm-256color command ranger'
+abbr lsa ls -al
+abbr lsl ls -l
 abbr r ranger
 abbr lns 'ln -s'
 abbr rmrf 'rm -rf'

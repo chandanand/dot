@@ -11,6 +11,7 @@ set -gx PATH $GOPATH/bin $PATH
 set -gx GOROOT /usr/local/opt/golang/libexec
 set -gx PATH $GOROOT/bin $PATH
 set -gx PATH $HOME/bin $PATH
+set -gx PATH $HOME/.cargo/bin $PATH
 
 # editor
 set -gx EDITOR nvim

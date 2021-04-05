@@ -32,5 +32,6 @@
 	},
   "coc.preferences.maxFileSize": "1MB",
   "coc.preferences.formatOnSaveFiletypes": ["go"],
-  "codeLens.enable": true
+  "codeLens.enable": true,
+  "clangd.path": "/Users/canand/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
 }

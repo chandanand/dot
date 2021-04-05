@@ -20,7 +20,6 @@ SETUVAR _fish_abbr_bu:brew\x20uninstall
 SETUVAR _fish_abbr_bud:brew\x20update
 SETUVAR _fish_abbr_bug:brew\x20upgrade
 SETUVAR _fish_abbr_cdd:cd\x20\x2d
-SETUVAR _fish_abbr_code:cd\x20\x7e/code
 SETUVAR _fish_abbr_cpr:cp\x20\x2dR
 SETUVAR _fish_abbr_desk:cd\x20\x7e/Desktop
 SETUVAR _fish_abbr_dots:cd\x20\x7e/dot
@@ -52,6 +51,8 @@ SETUVAR _fish_abbr_grbm:git\x20rebase\x20master
 SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_hello:hello\x20world
 SETUVAR _fish_abbr_lns:ln\x20\x2ds
+SETUVAR _fish_abbr_lsa:ls\x20\x2dal
+SETUVAR _fish_abbr_lsl:ls\x20\x2dl
 SETUVAR _fish_abbr_mkdirp:mkdir\x20\x2dp
 SETUVAR _fish_abbr_mono:cd\x20\x7e/go\x2dcode
 SETUVAR _fish_abbr_off:sudo\x20shutdown\x20\x2dh\x20now
@@ -72,11 +73,11 @@ SETUVAR _fish_abbr_vim:nvim
 SETUVAR _fish_abbr_vimconfig:nvim\x20\x7e/\x2econfig/nvim/
 SETUVAR _fish_abbr_zzz:sudo\x20shutdown\x20\x2ds\x20now
 SETUVAR _fisher_PatrickF1_2F_fzf_2E_fish_files:/Users/canand/\x2econfig/fish/functions/__fzf_extract_var_info\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__fzf_preview_file\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__fzf_report_file_type\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__fzf_search_current_dir\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__fzf_search_git_log\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__fzf_search_git_status\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__fzf_search_history\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__fzf_search_shell_variables\x2efish\x1e/Users/canand/\x2econfig/fish/conf\x2ed/fzf\x2efish
-SETUVAR _fisher_cideM_2F_fish_2D_yvm_files:/Users/canand/\x2econfig/fish/functions/yvm\x2efish\x1e/Users/canand/\x2econfig/fish/completions/yvm\x2efish
+SETUVAR _fisher_edc_2F_bass_files:/Users/canand/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/canand/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_jethrokuan_2F_z_files:/Users/canand/\x2econfig/fish/functions/__z\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__z_add\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__z_clean\x2efish\x1e/Users/canand/\x2econfig/fish/functions/__z_complete\x2efish\x1e/Users/canand/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/canand/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/canand/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/canand/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/Users/canand/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/Users/canand/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/Users/canand/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/Users/canand/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/canand/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/canand/\x2econfig/fish/completions/nvm\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1ePatrickF1/fzf\x2efish\x1ejorgebucaran/nvm\x2efish\x1ecideM/fish\x2dyvm
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1ePatrickF1/fzf\x2efish\x1ejorgebucaran/nvm\x2efish\x1eedc/bass
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
@@ -107,3 +108,5 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_user_paths:/usr/local/Cellar/yvm/4\x2e1\x2e1/shim\x1e/usr/local/Cellar/yvm/4\x2e1\x2e1/shim\x1e/usr/local/Cellar/yvm/4\x2e1\x2e1/shim\x1e/usr/local/Cellar/yvm/4\x2e1\x2e1/shim\x1e/usr/local/Cellar/yvm/4\x2e1\x2e1/shim\x1e/usr/local/Cellar/yvm/4\x2e1\x2e1/shim\x1e/usr/local/Cellar/yvm/4\x2e1\x2e1/shim\x1e\x1e/usr/local/opt/fzf/bin
+SETUVAR nvm_data:/Users/canand/\x2elocal/share/nvm
+SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist

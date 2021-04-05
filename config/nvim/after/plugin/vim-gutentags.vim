@@ -62,3 +62,7 @@ let g:gutentags_ctags_extra_args = [
       \ '--tag-relative=yes',
       \ '--fields=+ailmnS',
       \ ]
+
+let g:gutentags_exclude_filetypes = [
+      \ 'gitcommit',
+      \ ]
