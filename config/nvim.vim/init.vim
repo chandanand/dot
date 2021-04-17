@@ -22,9 +22,9 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
   " theme
-  Plug 'chriskempson/base16-vim'
-  Plug 'itchyny/lightline.vim'
+  Plug 'rakr/vim-one'
   Plug 'mhinz/vim-startify'
+  Plug 'ludovicchabant/vim-gutentags'
 
   " Navigation
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -33,7 +33,6 @@ call plug#begin('~/.config/nvim/plugged')
 
   " IDE like
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'ludovicchabant/vim-gutentags'
   Plug 'rhysd/vim-clang-format'
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
@@ -56,7 +55,7 @@ syntax on
 
 " lightline configuration
 let g:lightline = {
-  \ 'colorscheme': 'Tomorrow_Night',
+  \ 'colorscheme': 'one',
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
   \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ],

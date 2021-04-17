@@ -1,0 +1,24 @@
+#!/bin/bash
+bash <<"EOF"
+    set -ueo pipefail
+
+    npm rm -g idl || true
+
+    cd /usr/local/bin
+
+    [ -n "${IDL_RELEASE:-}" ] || IDL_RELEASE=release
+    [ -n "${IDL_REMOTE:-}" ] || IDL_REMOTE=gitolite@code.uber.internal:rpc/idl
+
+    git archive --remote "$IDL_REMOTE" "$IDL_RELEASE" idl | tar x
+
+    echo "Installed /usr/local/bin/idl."
+    if [ "$(which idl)" != "/usr/local/bin/idl" ]; then
+        echo "However, $(which idl) appears earlier in PATH"
+        exit 1
+    fi
+
+    # Update the current shell to recognize the new idl
+    hash -r
+
+    echo "You may need to 'hash -r' to refresh the bash PATH cache."
+EOF
