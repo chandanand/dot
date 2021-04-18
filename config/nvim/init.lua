@@ -1,26 +1,2 @@
-require('plugins')
-require('globals')
-require('nv-utils')
-require('settings')
-require('keymappings')
-require('colorscheme')
-require('nv-barbar')
-require('nv-comment')
-require('nv-compe')
-require('nv-dashboard')
-require('nv-galaxyline')
-require('nv-gitsigns')
-require('nv-lspkind')
-require('nv-lspsaga')
-require('nv-nvimtree')
-require('nv-telescope')
-require('nv-treesitter')
-require('nv-dap')
-require('nv-autopairs')
-
-vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
-
--- LSP
-require('lsp')
-require('lsp.lua-ls')
-require('lsp.go-ls')
+-- Load Modules:
+require("core")

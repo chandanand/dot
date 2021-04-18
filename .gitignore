@@ -1,5 +1,5 @@
 .DS_Store
 .ctags
 config/nvim.vim/plugged/*
-config/nvim/ls/*
+config/nvim.old/ls/*
 config/karabiner/automatic_backups/*
